@@ -1,5 +1,5 @@
 PRODUCT_PROPERTY_OVERRIDES := \
-    ro.rommanager.developerid=$(shell whoami)
+    ro.rommanager.developerid=teamkeyblade
 
 MOD_VERSION := rooted-aosp-ics-$(shell date +%Y%m%d)-$(AOSP_BUILD)
 
