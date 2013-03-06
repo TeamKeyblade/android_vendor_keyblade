@@ -1,7 +1,7 @@
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.rommanager.developerid=teamkeyblade
 
-MOD_VERSION := rooted-aosp-ics-$(shell date +%Y%m%d)-$(AOSP_BUILD)
+MOD_VERSION := rooted-aosp-jb-$(shell date +%Y%m%d)-$(AOSP_BUILD)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
@@ -17,7 +17,4 @@ SOUNDS_PATH:= frameworks/base/data/sounds
 PRODUCT_COPY_FILES += \
 	$(SOUNDS_PATH)/alarms/ogg/Hassium.ogg:system/media/audio/alarms/Hassium.ogg
 
-PRODUCT_PACKAGES += \
-    Superuser \
-    Superuser.apk \
-    su
+SUPERUSER_PACKAGE := com.teamkeyblade.superuser
