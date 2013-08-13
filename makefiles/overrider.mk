@@ -1,7 +1,7 @@
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.rommanager.developerid=teamkeyblade
 
-MOD_VERSION := rooted-aosp-jb-$(shell date +%Y%m%d)-$(AOSP_BUILD)
+MOD_VERSION := raosp-jb-$(shell date +%Y%m%d)-$(AOSP_BUILD)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
