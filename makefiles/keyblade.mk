@@ -4,4 +4,8 @@ PRODUCT_PACKAGES += \
     Superuser \
     su
 
-$(call inherit-product, vendor/keyblade/makefiles/addbuildprops.mk)
+MOD_VERSION := raosp-jb-$(shell date +%Y%m%d)-$(PRODUCT_DEVICE)
+
+ADDITIONAL_BUILD_PROPERTIES += \
+    ro.rommanager.developerid=teamkeyblade\
+    ro.modversion=$(MOD_VERSION)
