@@ -4,4 +4,4 @@ PRODUCT_PACKAGES += \
     Superuser \
     su
 
-include vendor/keyblade/makefiles/addbuildprops.mk
+$(call inherit-product, vendor/keyblade/makefiles/addbuildprops.mk)
