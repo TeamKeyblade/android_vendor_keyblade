@@ -2,4 +2,4 @@
 LOCAL_PATH := $(call my-dir)
 
 $(shell ($(LOCAL_PATH)/scripts/variablemakir.sh))
-PRODUCT_MAKEFILES := $(LOCAL_PATH)/makefiles/keyblade.mk
+$(call inherit-product, $(LOCAL_PATH)/makefiles/keyblade.mk)
