@@ -2,4 +2,4 @@
 LOCAL_PATH := $(call my-dir)
 
 $(shell ($(LOCAL_PATH)/scripts/variablemakir.sh))
-include $(call first-makefiles-under,$(LOCAL_PATH)/makefiles)
+include $(call inherit-product,$(LOCAL_PATH)/makefiles/keyblade.mk)
