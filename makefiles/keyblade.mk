@@ -4,4 +4,4 @@ PRODUCT_PACKAGES += \
     Superuser \
     su
 
-include vendor/keyblade/makefiles/overrider.mk
+include vendor/keyblade/makefiles/addbuildprops.mk
