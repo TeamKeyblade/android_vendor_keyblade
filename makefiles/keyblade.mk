@@ -18,3 +18,7 @@ PRODUCT_COPY_FILES += \
 	$(SOUNDS_PATH)/alarms/ogg/Hassium.ogg:system/media/audio/alarms/Hassium.ogg
 
 SUPERUSER_PACKAGE := com.teamkeyblade.superuser
+
+PRODUCT_PACKAGES += \
+    Superuser \
+    su

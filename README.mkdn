@@ -3,4 +3,4 @@ Team Keyblade's vendor tree
 <br/>
 A word about vendor/keyblade:
 _____________________________________________________________________________________
-it works by making Android.mk file execute a bash script, which sets up superuser dependencies and attaches a call to overrider.mk file to full_(the device ur building).mk
+it works by making Android.mk do a script to do a variable since idk how to do that exactly in make-files, then call the keyblade.mk file
