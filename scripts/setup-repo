@@ -1,0 +1,16 @@
+#!/bin/bash
+# Written by Sean Donovan (swordrune10)
+repo=$( cd $(dirname $0/../../..) && pwd )
+
+rm -rf $repo/system/extras/su
+
+cd $repo
+for f in `/bin/ls device/*/*/vendorsetup.sh 2> /dev/null`
+do
+	cd $repo
+	cd $(echo $f | sed -e 's/\/vendorsetup.sh//g')
+
+	if ( ! grep -q "keyblade.mk" device.mk ); then
+		echo '$(call inherit-product, vendor/keyblade/makefiles/keyblade.mk)' >> device.mk
+	fi
+done
