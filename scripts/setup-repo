@@ -10,7 +10,7 @@ do
 	cd $repo
 	cd $(echo $f | sed -e 's/\/vendorsetup.sh//g')
 
-	if ( ! grep -q "keyblade.mk" device.mk ); then
+	if ( ! grep -q "keyblade.mk" device.mk 2> /dev/null ); then
 		echo '$(call inherit-product, vendor/keyblade/makefiles/keyblade.mk)' >> device.mk
 	fi
 done
