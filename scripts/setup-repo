@@ -1,6 +1,6 @@
 #!/bin/bash
 # Written by Sean Donovan (swordrune10)
-repo=$( cd $(dirname $0/../../..) && pwd )
+repo=$( cd $(dirname $0) && cd ../../.. && pwd )
 
 rm -rf $repo/system/extras/su
 
